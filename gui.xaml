@@ -1,0 +1,21 @@
+<Window x:Class="QPI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:QPI"
+    mc:Ignorable="d"
+    WindowStartupLocation="CenterScreen"
+    Title = "Quick Printer Install" Height="500" Width="500">
+    <StackPanel> 
+      <TextBox Name = "searchBar" Height = "20" Width = "150" Margin = "5"/> 
+      <Grid Margin="20" MinHeight = "200" MaxHeight= "350" MaxWidth = "5000">
+        <DataGrid Name="dataGrid" IsReadOnly="True" 
+            Grid.Row="50" 
+            Grid.Column="50"
+            ScrollViewer.CanContentScroll="True"
+            ScrollViewer.VerticalScrollBarVisibility="Auto"
+            ScrollViewer.HorizontalScrollBarVisibility="Auto">
+        </DataGrid>
+      </Grid>
+      <Button Name = "installBtn" Content = "Install Printer(s)" Height = "20" Width = "90" Margin = "5"/> 
+   </StackPanel> 
+</Window>
